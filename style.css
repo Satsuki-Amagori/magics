@@ -26,24 +26,26 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px; /* 検索欄全体の下に余白 */
+    width: 100%;
 }
 
 .search-container input[type="text"] {
-    width: 70%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    margin-right: 10px; /* ボタンとの間隔を確保 */
+    width: 90%; /* 横幅を広げる */
+    max-width: 600px; /* 最大幅を設定（大きくしすぎないように） */
+    padding: 15px; /* 高さを増やす */
+    font-size: 1.2rem; /* 文字サイズを大きく */
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-right: 15px; /* ボタンとの間隔を広げる */
 }
 
 .search-container button {
-    padding: 10px 15px;
-    font-size: 1rem;
+    padding: 15px 20px; /* ボタンも大きくする */
+    font-size: 1.2rem;
     background: #0077cc;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background 0.3s ease-in-out;
 }
@@ -51,7 +53,6 @@ body {
 .search-container button:hover {
     background: #0055aa;
 }
-
 
 /* メインコンテンツ */
 .container {
