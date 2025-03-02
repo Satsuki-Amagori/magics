@@ -1,0 +1,22 @@
+{
+    "magic": [
+        {
+            "name": "ファイアボール",
+            "description": "爆発的な炎で敵を焼く",
+            "details": "直径2mの火球を発生させ、半径3m内の敵に20ダメージ",
+            "password": "fire123"
+        },
+        {
+            "name": "アイススピア",
+            "description": "鋭い氷の槍で貫く",
+            "details": "氷の槍を飛ばし、ターゲットに15ダメージ",
+            "password": "ice456"
+        },
+        {
+            "name": "ライトニングボルト",
+            "description": "雷を放つ魔法",
+            "details": "雷を直線状に発射し、敵に30ダメージ",
+            "password": "thunder789"
+        }
+    ]
+}
