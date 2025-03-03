@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +10,21 @@
     <h2>魔法検索</h2>
     <p>雨氷卓世界観百科は<a href="https://satsuki-amagori.github.io/wikipedia/">こちら</a>から</p>
     <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から</p>
-    
+
+    <!-- 修正: id="magic-name" を正しく設定 -->
     <input type="text" id="magic-name" placeholder="魔法名を入力">
-    <button onclick="searchMagic()">検索</button>
-    
+    <button id="searchButton">検索</button>
+
     <div id="error-message"></div>
 
-    <!-- 修正: script.js を正しく読み込む -->
+    <!-- 修正: defer をつけた script 読み込み -->
     <script src="script.js" defer></script>
+
+    <!-- 修正: JavaScript側でイベントを適切に設定 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("searchButton").addEventListener("click", searchMagic);
+        });
+    </script>
 </body>
+</html>
