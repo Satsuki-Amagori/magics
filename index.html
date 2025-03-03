@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +8,12 @@
     <h2>魔法検索</h2>
     <p>雨氷卓世界観百科は<a href="https://satsuki-amagori.github.io/wikipedia/">こちら</a>から</p>
     <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から</p>
-
-    <input type="text" id="magicName" placeholder="魔法名を入力">
+    
+    <input type="text" id="magic-name" placeholder="魔法名を入力">
     <button onclick="searchMagic()">検索</button>
+    
+    <div id="error-message"></div>
 
-    <div id="magicResult" style="display: none;">
-        <p>その名前の魔法は存在しません</p>
-    </div>
-
-    <script src="login.js"></script>
+    <!-- 修正: script.js を正しく読み込む -->
+    <script src="script.js" defer></script>
 </body>
-</html>
