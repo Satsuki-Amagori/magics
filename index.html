@@ -7,19 +7,32 @@
     <link rel="stylesheet" href="https://satsuki-amagori.github.io/wikipedia/style.css">
 </head>
 <body>
-    <h2>魔法検索</h2>
-    <p>雨氷卓世界観百科は<a href="https://satsuki-amagori.github.io/wikipedia/">こちら</a>から</p>
-    <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から</p>
+    <div class="container">
+        <header>
+            <h1>魔法検索</h1>
+        </header>
 
-    <input type="text" id="magicName" placeholder="魔法名を入力">
-    <button id="searchButton">検索</button>
+        <main>
+            <section class="links">
+                <p>雨氷卓世界観百科は<a href="https://satsuki-amagori.github.io/wikipedia/">こちら</a>から</p>
+                <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から</p>
+            </section>
 
-    <div id="error-message"></div>
+            <section class="search-box">
+                <input type="text" id="magicName" placeholder="魔法名を入力">
+                <button id="searchButton">検索</button>
+                <div id="error-message"></div>
+            </section>
+
+            <section id="magicResult"></section> <!-- 検索結果が表示される -->
+        </main>
+
+        <footer>
+            <p><a href="../../index.html">トップページへ戻る</a></p>
+        </footer>
+    </div>
 
     <script src="script.js" defer></script>
-    
-    <div id="magicResult"></div> <!-- 検索結果が表示される -->
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("searchButton").addEventListener("click", searchMagic);
