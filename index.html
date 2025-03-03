@@ -1,21 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>魔法検索</title>
-    <link rel="stylesheet" href="https://satsuki-amagori.github.io/wikipedeia/style.css">
+    <link rel="stylesheet" href="https://satsuki-amagori.github.io/wikipedia/style.css">
 </head>
 <body>
     <h2>魔法検索</h2>
     <p>雨氷卓世界観百科は<a href="https://satsuki-amagori.github.io/wikipedia/">こちら</a>から</p>
-    <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から<br></p>
+    <p>ダイスロールは<a href="https://satsuki-amagori.github.io/dice-roller/">こちら</a>から</p>
+
     <input type="text" id="magicName" placeholder="魔法名を入力">
-    <p> </p>
     <button onclick="searchMagic()">検索</button>
 
-    <div id="magicResult"><p>その名前の魔法は存在しません</p></div>
+    <div id="magicResult" style="display: none;">
+        <p>その名前の魔法は存在しません</p>
+    </div>
 
     <script src="script.js"></script>
-
-
-
 </body>
+</html>
